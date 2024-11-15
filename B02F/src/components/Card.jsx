@@ -14,26 +14,48 @@ const Card = ({number,iconClass,label}) => {
    </>
   )
 }
-
-export const featureCard=()=>{
+// feature card
+export const FeatureCard=({title,image,paragraph})=>{
   return(
-    <div className='w-72 h-48 rounded-xl border-0.5 bg-slate-100'>
+    <div className='w-72 h-48 rounded-xl border shadow-2xl border-black bg-slate-100 '>
     <img  className='m-auto pt-3'
-    src={img1}/>
+    src={image} alt='image'/>
 
 <div className='w-60  h-11 m-auto pt-5 '>
-<h3 className=' font-cormorant text-[20px] leading-[24.8px] font-medium text-center'>Plagiarism Checker</h3>
+<h3 className=' font-cormorant text-[20px] leading-[24.8px] font-medium text-center'>{title}</h3>
 </div>
  <div className='w-72  h-9 gap-0.5 mt-5'>
-  <p className='font-cormorant text-[20px] leading-[24.8px] font-normal text-center'>We will provide access to assignments free of plagiarism</p>
+  <p className='font-cormorant text-[20px] leading-[24.8px] font-normal text-center'>{paragraph}</p>
 </div>
-
-
-
   </div>
- 
+  )
+}
 
+export const ServiceCard=({title,img,rating})=>{
+  return(
+    <div className='w-[226px] h-60 border border-black rounded-2xl overflow-hidden ml-2'>
+<div className=''>
+<img className='rounded-t-xl w-56 h-40 '
+ src={img}/>
+</div>
+<div className='w-56 h-20 pl-1'>
+<h6 className='font-cormorant text-[20px] leading-[29.1px] font-bold '>{title}</h6>
+<img src={rating}/>
+</div>
+    </div>
+  )
+}
+// advantages card//
 
+export const Advantage=({title,description})=>{
+  return(
+    <div className='w-60 h-60 border border-black rounded-2xl   overflow-hidden  bg-red-300 flex items-center justify-center mt-10'>
+   <div>
+    <h3 className='font-cormorant text-[24px] leading-[29.1px] font-bold text-center '>{title}</h3>
+       <p className='font-cormorant text-[16px] leading-[19.3px] font-medium text-center mt-2'>{description}</p>
+       </div>
+        </div>
+        
   )
 }
 
