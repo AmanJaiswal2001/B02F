@@ -30,17 +30,17 @@ import con13 from "../assets/con13.png"
 import con14 from "../assets/con14.png"
 import obj from "../assets/ob.png"
 import obj1 from "../assets/st.png"
-
+import Accordian from './Accordian'
 const Services = () => {
   return (
    
     <>
-   <div className='w-[1356px] h-[1313px] bg-pink-300 rounded-md mt-10 shadow-xl '>
- <div className='w-[1550.8px] h-[1289px] border border-black bg-slate-50 shadow-xl relative top-2'>
-<h2 className='font-cormorant text-[40px] leading-[48.8px] font-bold text-center'>Our Services</h2>
-<p className='font-cormorant text-[24px] leading-[29.8px] font-medium text-center'>We offer some fantastic services</p>
+   <div className=' h-[660px]  md:w-[1356px] md:h-[1313px] bg-pink-200 rounded-md mt-12 md:mt-10 shadow-xl '>
+ <div className='md:w-[1550.8px] md:h-[1289px] md:border border-black md:bg-slate-50 md:shadow-xl relative top-2'>
+<h2 className='font-cormorant  text-[11px]  leading-[13.32px] md:text-[40px] md:leading-[48.8px] font-bold text-center'>Our Services</h2>
+<p className='font-cormorant  text-[10px] leading-[12.11px]    md:text-[24px] md:leading-[29.8px] font-medium text-center'>We offer some fantastic services</p>
 
-<div className='grid grid-cols-4 gap-8 m-20 '>
+<div className='grid  grid-cols-3 md:grid-cols-4  gap-2 md:gap-8 m-4 md:m-20 '>
 <ServiceCard  title="Assignment" img={image1} rating={con1}/>
 <ServiceCard title="Dissertation" img={image2} rating={con2}/>
 <ServiceCard title="Course work" img={image3} rating={con3}/>
@@ -65,13 +65,13 @@ const Services = () => {
     </div>
 
 
- <div className='w-full h-[435px] border  bg-slate-50  pt-4 '>
-<h2 className='font-cormorant text-[36px] leading-[43.6px] font-bold text-center'>Our Assistance's advantages</h2>
-<p className='font-cormorant text-[20px] leading-[24.2px] font-medium text-center'>The Assigner wants to build a strong foundation that will enable students to soar to achievement.</p>
+ <div className=' h-96  md:w-full md:h-[435px] border  bg-slate-50  pt-4 '>
+<h2 className='font-cormorant  text-[11px] leading-[13.3px]   md:text-[36px] md:leading-[43.6px] font-bold text-center'>Our Assistance's advantages</h2>
+<p className='font-cormorant   text-[10px] leading-[12.12px]  md:text-[20px] md:leading-[24.2px] font-medium text-center'>The Assigner wants to build a strong foundation that will enable students to soar to achievement.</p>
 
 
     {/*advantage  */}
-<div className='m-auto  flex justify-center items-center mt-4  gap-14'>
+<div className='m-auto mt-2 gap-4 flex flex-wrap md:flex justify-center items-center md:mt-4  md:gap-14'>
 <Advantage title="No Plagiarism" description="100% original answers that lessen the possibility of receiving a bad grade."/>
 <Advantage title="On-time Submission" description="We promise to turn in the job ahead of schedule, no matter how difficult it is."/>
 <Advantage title="24/7 support" description="Help for homework is available 24/7; we are always here to assist students with their assignments."/>
@@ -80,7 +80,7 @@ const Services = () => {
    </div>
   
 
-   <div className='flex justify-end relative bottom-80 right-28'>
+   <div className='md:flex justify-end relative bottom-80 right-28 hidden '>
    <img src={obj}/>
    </div>
 
@@ -88,11 +88,19 @@ const Services = () => {
 
    {/* accodinan design */}
 <div>
-<div className='relative bottom-28 left-32'>
+<div className='relative bottom-28 left-32 hidden md:block'>
    <img src={obj1}/>
    </div>
-<h2 className='font-cormorant text-[40px] leading-[48.44px] font-bold text-center relative bottom-36'>FAQs</h2>
-<div className='w-[1317px] h-44 bg-slate-50 relative bottom-36 m-auto'>
+<h2 className='font-cormorant  text-[40px] leading-[48.44px] md:text-[40px] md:leading-[48.44px] font-bold text-center relative bottom-24 md:bottom-36 '>FAQs</h2>
+<div className='md:w-[1317px] h-44  relative md:bottom-36 bottom-28 md:m-auto '>
+{/* Accrdian */}
+<Accordian title="What services are available on our website?" description="Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to testLorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test"/>
+<Accordian title="How can we guarantee the caliber of the assignments?" description="Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to testLorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test"/>
+
+<Accordian title="What distinguishes our company from other assignment writing firms?" description="Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to testLorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test"/>
+<Accordian title="Does utilizing our service have any limitations?" description="Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to testLorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test"/>
+<Accordian title="How can consumers access our website's news and updates?" description="Lorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to testLorem Ipsum” generator. “Lorem ipsum” dummy text is used by many web-developers to test"/>
+
 
 </div>
 

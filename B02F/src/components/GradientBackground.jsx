@@ -11,33 +11,33 @@ import { FeatureCard } from './Card'
 const GradientBackground = () => {
   return (
     <>
-    <div className="w-full h-[638px] relative bg-custom-gradient  flex rounded-2xl left-0.5 mt-12">
+    <div className="md:w-full w-screen h-36 md:h-[638px] relative bg-custom-gradient  flex rounded-2xl left-0.5 md:mt-12">
     <div>
-      <div className='w-[840px] h-80 pt-16 pl-12  '>
+      <div className='w-36 h-10 md:w-[840px] md:h-80  md:pt-16 md:pl-12 m-2 flex flex-col '>
       <Paragraph title="IELTS Preparation" color="text-pink-700"/>
-      <br></br>
+      {/* <br></br> */}
 <Paragraph title="Online Best Learning " color="text-purple-900"/>
-<br></br>
+{/* <br></br> */}
 <Paragraph title="opportunities in The World " color="text-violet-700"/>
       </div>
-      <div className='w-[821px] h-28 pt-2 pl-12 '>
-        <p className='font-cormorant text-[32px] leading-[38.8px] font-semi'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <div className='md:w-[821px]  w-56 h-10 md:h-28  md:pl-12 '>
+        <p className='font-cormorant  text-[10px] pl-2  leading-[12.11px]  md:text-[32px] md:leading-[38.8px] font-semi'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Audax negotium, dicerem impudens, nisi hoc institut 
 translatum ad philosophos nostros esset.</p>
       </div>
-      <div className='w-96 h-28  bg-purple-900 mt-12 ml-24 text-center flex justify-center rounded-2xl text-white'>
+      <div className='w-14 h-6 md:w-96 md:h-28  bg-purple-900 md:mt-12 md:ml-24 ml-2  mt-1 text-center flex justify-center rounded-sm md:rounded-2xl text-white'>
      <Button/>
      </div>
       </div>
 <div>
-    <div className='w-[858px] mr-5 mt-4 absolute top-0 right-0 h-80 pt-7 '>
+    <div className='md:w-[858px]  w-56 h-16 md:mr-5 md:mt-4 absolute  md:top-0 right-0 md:h-80 md:pt-7 '>
       
       <img className='' 
       src={vector}/> 
     </div>
-    <div className='w-[497.9px] h-[417.29px] mt-56 ml-52  '>
+    <div className=' w-32 h-32 md:w-[497.9px] md:h-[417.29px] md:mt-56 md:ml-52 mt-4 ml-4 '>
       <img 
-      className='w-[385.49px] h-[395.83px] '
+      className=' w-32 h-32 md:w-[385.49px] md:h-[395.83px] '
       src={Group}/>
     </div>
 </div>
@@ -46,16 +46,16 @@ translatum ad philosophos nostros esset.</p>
     </div>
 
     {/* awesome Feature */}
-    <div className='w-full h-72 '>
-<div className='w-80 h-12 m-auto mt-2'>
-  <p className='font-cormorant text-[40px] leading-[48.8px] font-bold text-center'>Awesome Features</p>
+    <div className=' md:w-full md:h-72 '>
+<div className='md:w-80 md:h-12 w-24 h-4 m-auto mt-2'>
+  <p className='font-cormorant  text-[11px] leading-[13.8px]  md:text-[40px] md:leading-[48.8px] font-bold text-center'>Awesome Features</p>
 </div>
-<div className='w-[484px] h-7 m-auto'>
-<p className='font-cormorant text-[24px] leading-[29.8px] font-medium text-center'
+<div className=' w-48 h-3  md:w-[484px] md:h-7 m-auto'>
+<p className='font-cormorant text-[10px] leading-[12.11px] md:text-[24px] md:leading-[29.8px] font-medium text-center'
 >Get ready to unlock the next level of features</p>
 </div>
 {/* card */}
-<div className='w-[1380px] h-56 pt-9 m-auto  flex justify-center items-center  gap-10 '>
+<div className='md:w-[1380px]   h-40 md:h-56 gap-3 mt-2 md:pt-9 m-auto flex flex-wrap md:flex justify-center items-center  md:gap-10 '>
  <FeatureCard  title="Plagiarism Checker" image={img1} paragraph="We will provide access to assignments free of plagiarism"
  />
  <FeatureCard  title="Free Publications" image={img2} paragraph="We will provide access to publication"

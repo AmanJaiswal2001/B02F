@@ -26,29 +26,29 @@ src={image1} alt="hero image"/>
 
     </div>
      {/* hero-2 */}
-<div className=' w-full h-52 top-[680px]  ' >
-<div className=''>
+<div className='  md:w-full md:h-52 md:top-[680px]  ' >
+<div className='md:block hidden'>
 <img className='pl-2'
 src={object}/>
   
 </div>
 
-<div className='w-[1351px] h-56 bg-gray-50 top-[696px] mx-auto -mt-[50px] shadow-lg'>
-<div className='w-[722px] h-9 items-center   mt-4 mx-auto'>
-  <h2 className=' font-cormorant text-[48px] leading-[30.8px] text-center'>700+ students saved, and counting</h2>
+<div className='w-screen h-28 md:w-[1351px] md:h-56  md:top-[696px] mx-auto md:-mt-[50px] shadow-lg '>
+<div className='md:w-[722px] md:h-9 md:items-center   mt-4 md:mx-auto'>
+  <h2 className=' font-cormorant text-[11px] md:text-[48px] md:leading-[30.8px]  font-bold text-center'>700+ students saved, and counting</h2>
 </div>
-<div className='w-[632px] h-10 mx-auto top-[740px] mt-4'>
-  <p className='font-cormorant text-[20px] leading-[19.8px] font-semibold text-center'>50K new study notes added every day, from the world’s most active student
+<div className=' w-80 h-5  md:w-[632px] md:h-10 mx-auto md:top-[740px] mt-4'>
+  <p className='font-cormorant  leading-[12px] text-[10px] md:text-[20px] md:leading-[19.8px] font-medium text-center'>50K new study notes added every day, from the world’s most active student
   communities</p>
 </div>
-<div className=' h-24 flex justify-around items-center mt-2 '>
+<div className='w-80  md:w-full md:h-24 flex   mx-auto    md:justify-around items-center mt-2 '>
 <Card number="350+" iconClass="fa-regular fa-file" label="Study resources"/>
 
 <Card number="115+" iconClass="fa-solid fa-building-columns" label="Institutions"/>
 <Card number="700+" iconClass="fa-regular fa-user" label="Users"/>
 
 </div>
-<div className=' relative left-8 flex justify-end -mt-16  '>
+<div className='  hidden md:relative md:left-8 md:flex md:justify-end md:-mt-16  '>
 <img className=''
 src={star}/>
   

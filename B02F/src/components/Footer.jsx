@@ -3,11 +3,11 @@ import footer from "../assets/footer.png"
 
 const Footer = () => {
   return (
-    <div className='w-[1540px] h-[565px] relative '>
-<img  className='w-[1540px] relative top-3'
+    <div className=' md:w-[1540px]   md:h-[565px] relative '>
+<img  className='w-[1540px] md:h-[565px] h-56 relative top-3'
 src={footer}/>
-  <div>
-  <div className=' w-[1540px] h-[465px] absolute flex justify-between gap-12 top-10 '>
+  <div >
+  <div className=' md:w-[1540px] md:h-[465px] absolute md:flex justify-between gap-12 top-10 hidden  '>
     {/* quick link */}
     <div className='m-12 flex flex-col  gap-2'>
     <h3 className='font-cormorant text-[32px] leading-[38.44px] font-bold'>Quick Link</h3>
